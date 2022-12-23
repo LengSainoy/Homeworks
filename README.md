@@ -4,7 +4,7 @@
 
 # Homework Repository
 
-###### **Version 3**
+###### **Version 3.1**
 
 This repository is for submit homework for only
 
@@ -347,8 +347,8 @@ if you have another homework that you want to work on. _repeat setup step_.
 #### Optional: If There is `Change Request` on the PR:
 
 - Please make change according to the comments.
-- Push the code
-- Click `re-request review` button
+- commit, then re-push the code
+- On the PR, Click `re-request review` button
 
 ![re-request button](picture/img_2.png)
 
@@ -356,10 +356,27 @@ if you have another homework that you want to work on. _repeat setup step_.
 
 ### Step3: Merge the code
 
-**After approval** Merge your code and delete your branch _(Do not merge your code unless it
+**After approval**, merge your code _(Do not merge your code unless it
 has been reviewed)_
 
-Congratulation~~!! your homeworks are completed .
+Then go back to your local and update the `main` branch by run
+```shell
+git switch main
+git pull
+```
+
+### Step4: Prune merged branch
+Delete your merged branch in Github.com
+
+After merging the PR, it should have option to delete right after. but if you miss that option, you can follow this 
+[steps][How to delete merged branch]
+
+then go back to the terminal in your local. Make sure you on the `main` branch and run
+###### to delete the branch
+```shell
+git branch -d <branch_to_be_deleted>
+```
+> **Note:** You _cannot_ checkout on <branch_to_be_deleted> when deleting it
 
 ----
 
@@ -379,6 +396,8 @@ git pull origin main
 ###### And merge commit from `main` to your branch that want to get updated:
 
 ```shell
+# run this while on your homework branch
+# it will merge `main` -> `your_branch`
 git merge main
 ```
 
@@ -440,7 +459,7 @@ git push -u origin main
 
 ### Step5: Refresh Github.com
 
-TADA~~!!
+TADA~~!! 
 
 Congrats, Now you should see your work on Github.com
 
@@ -512,3 +531,4 @@ Congrats, Now you should see your work on Github.com
 [Eclipse]: https://www.eclipse.org/downloads/
 [Github docs]: https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git
 [Notepad++]: https://notepad-plus-plus.org/downloads/
+[How to delete merged branch]: https://app.tango.us/app/workflow/How-to-delete-the-branch-on-Github-com-89d8a4365f2840d392dd89025bb57f84

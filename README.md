@@ -427,6 +427,7 @@ git init
 
 Go to Github.com to create an empty repository by following this [video](https://youtu.be/u-_uGO95xco?t=19)
 then **capture you repository http url**. it should end with `*.git`
+
 ----
 
 ### Step4: Publish your project

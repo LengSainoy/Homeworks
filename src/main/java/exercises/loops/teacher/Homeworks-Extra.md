@@ -1,5 +1,25 @@
 # Control Flow Extra Homework
 
+## Warm-up tasks
+- Write program to print all number in reverse in one line (from `n` to 1) - using while loop
+  Example:
+```text
+input: 20
+output:
+20 19 18 17 16 ... 3 2 1
+
+input: 0
+output:
+<empty_line>
+```
+- Write program that count number of digits in number
+  Example:
+```text
+345234
+345234 has 6 digits
+```
+- Write program to print all alphabets with their ASCII values. (lower / uppercase)
+
 ## Task E1:
 
 Given a non-negative number "num", return true if num is within 2 of a multiple of 10.

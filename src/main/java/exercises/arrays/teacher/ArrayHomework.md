@@ -44,7 +44,7 @@ int[]itemIDs={12345,12346,12347,12348,12349,12350};
 - find out if "iPad" is contained in the item list
 - Print the report of each shopping item `name` - `price` - `#ID`
 
-6. given the following arrays:
+6. Given the following arrays:
 
 ```java
 String[]names={"Anna","Nancy","Sarah"};
@@ -217,7 +217,6 @@ output:
 - how many odd numbers in the array?
 - how many numbers can be evenly divisible by 3?
 - how many numbers can be evenly divisible by 5?
-
 
 19. Given name array. find all the palindrome string then put into a new array.
 

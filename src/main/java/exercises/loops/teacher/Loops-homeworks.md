@@ -82,3 +82,10 @@ output: 120
 because:
 5!
 5 * 4 * 3 * 2 * 1 = 120
+
+## Task G:
+Write a program that can find sum of multiple of 3 and 5. Start from 0 to n. 
+```text
+sumOfMultipleOf3N5(10) -> 33
+sumOfMultipleOf3N5(20) -> 98
+```

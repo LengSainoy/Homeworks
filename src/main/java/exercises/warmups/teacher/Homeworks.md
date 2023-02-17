@@ -163,13 +163,13 @@ Write a Java Program to Find the largest value between the 3 numbers.
 Write a Java Program that prints the day of the week.
 **Note:** Your input must be between 1 to 7
 
-  ```text
-    Example:
-    Input : 1
-    output : Monday
-    Input : 7
-    output : Sunday
-  ```
+```text
+Example:
+Input : 1
+output : Monday
+Input : 7
+output : Sunday
+```
 
 ### Task I - Greeting by the hour
 
@@ -177,10 +177,11 @@ Write a Java Program that take a input between 0-23 then print the following mes
 
 When do the greetings (Good morning, afternoon, and evening) change?
 
-- Good Morning. 5:00 AM — 11:59 AM.
-- Good Afternoon. 12:00 PM — 4:59 PM.
-- Good Evening. 5:00 PM — 4:59 AM.
-- if input not between 0.00 - 23.59. Print `I don't understand`
+- Good Morning. 5 — 11
+- Good Afternoon. 12 — 16
+- Good Evening. 15 — 4
+- if input not between 1 - 24 Print `Invalid Input`
+
   ```text
   Example:
   input: 3
@@ -202,14 +203,28 @@ Create a calculator that can calculate basic operators like
 - multiplication and
 - division.
 
+**Example 1**
   ```text
-  input :
-  a = 3 , b = 4, operator = addition
-  Output = 7;
-  
-  input :
-  a = 3 , b = 4, operator = multiplication
-  Output = 12;
+  Enter the 1st number:
+  > 3 
+  Enter the 2nd number
+  > 4
+  Enter the operation (addition, subtraction, multiplication, division)
+  > addition
+  Output:
+  3 + 4 = 7;
+  ```
+
+**Example 2**
+  ```text
+  Enter the 1st number:
+  > 4 
+  Enter the 2nd number
+  > 3
+  Enter the operation (addition, subtraction, multiplication, division)
+  > multiplication
+  Output:
+  4 x 3 = 12;
   ```
 
 ### Task K - Can vote?
@@ -218,27 +233,44 @@ Write Java program to check if the person is eligible to vote
 
 Vote Condition:
 
-- has to be a `USA` citizenship
+- has to be a `USA` or `United States` citizenship
 - has to be `21` years or older
 
+**Example 1**
   ```text
-  Example-1:
-  Input:
-  name = "John"
-  citizenShip = "USA"
-  age = 43
+  Enter the name:
+  > John
+  What is the country of citizenship? 
+  > USA
+  Enter is the age:
+  > 43
   
   Output:
   Is John eligible to vote: true
-  
-  Example-2:
-  Input:
-  name = "Mary"
-  citizenShip = "USA"
-  age = 18
+  ```
+**Example 2**
+  ```text
+  Enter the name:
+  > Zoe
+  What is the country of citizenship? 
+  > United States
+  Enter is the age:
+  > 21
   
   Output:
-  Is Mary eligible to vote: false
+  Is Zoe eligible to vote: true
+  ```
+**Example 3**
+  ```text
+  Enter the name:
+  > Kathy
+  What is the country of citizenship? 
+  > Japanese
+  Enter is the age:
+  > 52
+  
+  Output:
+  Is Kathy eligible to vote: false
   ```
 
 ### Task M - Even or Odd
@@ -278,20 +310,20 @@ Write a program to print following information on the counsel.
 
 Write Java program to compute the sum of the digits of an integer. Constraint: Input < 100
 
-  ```text
-  Input:
-  25
-  Output
-  7
-  
-  Input:
-  45
-  Output:
-  9
-  
-  Input: 5
-  Output: 5
-  ```
+```text
+Input:
+25
+Output
+7
+
+Input:
+45
+Output:
+9
+
+Input: 5
+Output: 5
+```
 
 ### Task P - Days in month
 

@@ -1,12 +1,12 @@
 > **Rules:**
->- Do NOT make any commit in `main` branch.
->- All Git command _must_ to be run in root directory of your project
+>- Do NOT make any commit in `main` / `master` branch.
+>- All Git command _must_ to be run in _root directory_ of your project
 
 # Homework Repository
 
 ###### **Version 3.1**
 
-This repository is for submit homework for only
+This repository is for homework submission. This is for educational propose. 
 
 ![TechCircleLogo](picture/download.png?raw=true)
 
@@ -15,7 +15,7 @@ This repository is for submit homework for only
 ### Table of Contents
 
 - [Prerequisite](https://github.com/techCircle/Homework#prerequisite)
-- [Configuring Git](https://github.com/techCircle/Homework#configuring-git)
+- [Configuring Git](https://github.com/techCircle/Homework#configuring-git) (optional, but highly recommend)
 - [How to setup the project](https://github.com/techCircle/Homework#how-to-setup-the-project)
 - [Github workflow](https://github.com/techCircle/Homework#github-workflow)
 - [Get the latest code](https://github.com/techCircle/Homework#get-the-latest-code)
@@ -42,6 +42,8 @@ This repository is for submit homework for only
 - Optional:
   - [Github Desktop](https://desktop.github.com/)
   - IDE version control plug-in
+  
+----
 
 ## Configuring git
 
@@ -96,6 +98,8 @@ git config --global core.editor "subl -n -w"
 git config --global core.editor "code -w"
 ```
 
+----
+
 ## How to setup the project
 
 Please follow steps below to setup this project
@@ -105,10 +109,8 @@ Please follow steps below to setup this project
 ###### To clone the repository:
 
 ```bash
-git clone <git_url>
+git clone https://github.com/LengSainoy/Homeworks.git
 ```
-
-----
 
 ### Step2: Create your branch for that particular homework.
 
@@ -131,28 +133,19 @@ git branch
 git branch <branch_name>
 ```
 
------
+> #### Optional: If you create branch by mistake
+> Before run this command, you will need to switch to different branch.
+> ###### To delete local branch:
+> ```shell
+> # you cannot checkout to to-be-deleted branch while running this command
+> git branch -d <branch_name_to_be_deleted>
+> ```
 
-#### Optional: If you create branch by mistake
-
-Before run this command, you will need to switch to different branch.
-
-###### To delete local branch:
-
-```shell
-# you cannot checkout to to-be-deleted branch while running this command
-git branch -d <branch_name_to_be_deleted>
-```
-
-or make any typo and want to rename it. Use below command
-
-###### To rename your current branch:
-
-```shell
-git branch -M <new_branch_name>
-```
-
------
+> or make any typo and want to rename it. Use below command
+> ###### To rename your current branch:
+> ```shell
+> git branch -M <new_branch_name>
+> ```
 
 ### Step3: Switch to your branch
 
@@ -166,15 +159,13 @@ git switch <branch_name>
 ```
 
 > **Tip:** Or combine Step2 & Step3 with `git switch -C <branch_name>` or `git checkout -b <branch_name>`
------
 
 ### Step4: Import the project
+** You can also do this step before [Step2](https://github.com/LengSainoy/Homeworks#step2-create-your-branch-for-that-particular-homework)
 
 - Open your IDE, then import the recent cloned project.
-- **For IntelliJ user, if you still don't see `/src` folder you may need to create a project module
+- **For IntelliJ user**, if you still don't see `/src` folder you may need to create a project module
   like [so](https://www.jetbrains.com/help/idea/creating-and-managing-modules.html#multimodule-projects)
-
------
 
 ### Step5: Check your current branch*
 
@@ -186,8 +177,6 @@ git switch <branch_name>
 ```bash
 git branch
 ```
-
-----
 
 ### Step6: Create a new package
 
@@ -202,8 +191,6 @@ git branch
 
 - All tasks instruction should be under `tasks` package for your reference.
 - double check that your code can run locally before doing any commit
-
-----
 
 ### Step8: Commit the changes
 
@@ -227,17 +214,12 @@ git add <file_name1> <file_name2>
 git commit -m "this message should be meaningful"
 ```
 
-_Optional:_ if you make a commit by mistake, run
-
-###### to undo the previous commit
-
-```shell
-git reset HEAD~
-```
-
-or see this article about [undo change]
-
-----
+> _Optional:_ if you make a commit by mistake, run
+> ###### to undo the previous commit
+> ```shell
+> git reset HEAD~
+> ```
+> or see this article about [undo change]
 
 ### Step9: Push you code to remote repository
 
@@ -254,12 +236,10 @@ If you *never* have origin <branch_name> branch (on GitHub)
 > git branch -a
 > # it will show list of local branches & origin branches
 > ```
->
 > ###### To check that your local branch is *track* with origin branch
 > ```bash
 > git branch -vv
 > ```
->
 > ![branch -vv screenshot](picture/SCR-20221207-cm9.png)
 
 ###### To publish the branch for the first time.

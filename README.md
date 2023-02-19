@@ -313,6 +313,7 @@ if you have another homework that you want to work on. _repeat setup step_.
 > - Please make change according to the comments.
 > - commit, then re-[push the code]
 > - On the PR, Click `re-request review` button
+> 
 > ![re-request button](picture/img_2.png)
 
 ### Step3: Merge the code 

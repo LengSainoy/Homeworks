@@ -17,6 +17,7 @@ This repository is for homework submission. This is for educational propose.
 - [Prerequisite](https://github.com/LengSainoy/Homeworks#prerequisite)
 - [Configuring Git](https://github.com/LengSainoy/Homeworks#configuring-git) - (optional, but highly recommend)
 - [How to setup the project](https://github.com/LengSainoy/Homeworks#how-to-setup-the-project)
+- [Implementation & push](https://github.com/LengSainoy/Homeworks#-how-to-implement-the-task-in-local-and-push-to-githubcom)
 - [Create pull request](https://github.com/LengSainoy/Homeworks#create-pull-request)
 - [Get the latest code](https://github.com/LengSainoy/Homeworks#get-the-latest-code)
 - [To setup local repository](https://github.com/LengSainoy/Homeworks#to-setup-local-repository) - 

@@ -458,14 +458,14 @@ Congrats, Now you should see your work on Github.com
 ## 🎩 Tips
 
 - Be mindful on **every response** in the console. Most of the time it will tell you what to do, or what you did wrong.
-- If you not so sure how to use any command. you can append `-help` option at the end of your git command
+- If you not so sure how to use any command. you can append `--help` option at the end of your git command
 
   _For Example:_
   
   ```bash
-  git commit -help
-  git branch -help
-  git log -help
+  git commit --help
+  git branch --help
+  git log --help
   ```
 - For Mac user, this is how you can modify your terminal into the next step. see this [link](https://www.youtube.com/watch?v=CF1tMjvHDRA&t=81s)
 

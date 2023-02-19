@@ -482,6 +482,9 @@ Congrats, Now you should see your work on Github.com
 - [linux command cheatsheet](https://www.guru99.com/linux-commands-cheat-sheet.html)
 - article of how to [undo change] (undo git commit)
 - how to change default git editor. see [Github docs]
+- Git terminology. 
+  - [JavaPoint](https://www.javatpoint.com/git-terminology)
+  - [A Cloud Guru](https://acloudguru.com/blog/engineering/git-terms-explained)
 
 [Git]: https://git-scm.com/downloads
 [JDK]: https://www.oracle.com/java/technologies/downloads/

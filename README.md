@@ -456,6 +456,10 @@ Congrats, Now you should see your work on Github.com
 > - Ensure that you initialize git in your project directory. You can check it by showing hidden files in your project
     directory and see that there is a folder name `.git`.
 
+6. My branch cannot be automatically merge because of the merge conflict. 
+
+> See a short 5 mins video show how to resolve merge conflict [here](https://www.youtube.com/watch?v=xNVM5UxlFSA&t=129s)
+
 ## 🎩 Tips
 
 - Be mindful on **every response** in the console. Most of the time it will tell you what to do, or what you did wrong.

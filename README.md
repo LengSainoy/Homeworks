@@ -20,7 +20,7 @@ This repository is for homework submission. This is for educational propose.
 - [Implementation & push](https://github.com/LengSainoy/Homeworks#-how-to-implement-the-task-in-local-and-push-to-githubcom)
 - [Create pull request](https://github.com/LengSainoy/Homeworks#create-pull-request)
 - [Get the latest code](https://github.com/LengSainoy/Homeworks#get-the-latest-code)
-- [To setup local repository](https://github.com/LengSainoy/Homeworks#to-setup-local-repository) - 
+- [To setup local repository](https://github.com/LengSainoy/Homeworks#to-setup-local-repository) - for future reference
 - [FAQ](https://github.com/LengSainoy/Homeworks#faq)
 - [Tips](https://github.com/LengSainoy/Homeworks#tips)
 - [Docs & References](https://github.com/LengSainoy/Homeworks#docs--references)

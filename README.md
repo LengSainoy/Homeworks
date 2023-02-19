@@ -2,7 +2,7 @@
 >- Do NOT make any commit in `main` / `master` branch.
 >- All Git command _must_ to be run in _root directory_ of your project
 
-# Homework Repository
+# 📚 Homework Repository
 
 ###### **Version 3.1**
 
@@ -14,19 +14,19 @@ This repository is for homework submission. This is for educational propose.
 
 ### Table of Contents
 
-- [Prerequisite](https://github.com/techCircle/Homework#prerequisite)
-- [Configuring Git](https://github.com/techCircle/Homework#configuring-git) (optional, but highly recommend)
-- [How to setup the project](https://github.com/techCircle/Homework#how-to-setup-the-project)
-- [Github workflow](https://github.com/techCircle/Homework#github-workflow)
-- [Get the latest code](https://github.com/techCircle/Homework#get-the-latest-code)
-- [To setup local repository](https://github.com/techCircle/Homework#to-setup-local-repository)
-- [FAQ](https://github.com/techCircle/Homework#faq)
-- [Tips](https://github.com/techCircle/Homework#tips)
-- [Docs & References](https://github.com/techCircle/Homework#docs--references)
+- [Prerequisite](https://github.com/LengSainoy/Homeworks#prerequisite)
+- [Configuring Git](https://github.com/LengSainoy/Homeworks#configuring-git) - (optional, but highly recommend)
+- [How to setup the project](https://github.com/LengSainoy/Homeworks#how-to-setup-the-project)
+- [Create pull request](https://github.com/LengSainoy/Homeworks#create-pull-request)
+- [Get the latest code](https://github.com/LengSainoy/Homeworks#get-the-latest-code)
+- [To setup local repository](https://github.com/LengSainoy/Homeworks#to-setup-local-repository) - 
+- [FAQ](https://github.com/LengSainoy/Homeworks#faq)
+- [Tips](https://github.com/LengSainoy/Homeworks#tips)
+- [Docs & References](https://github.com/LengSainoy/Homeworks#docs--references)
 
 ----
 
-## Prerequisite
+## 👀 Prerequisite
 
 - [JDK] 15 or later
 - [Git]
@@ -39,13 +39,11 @@ This repository is for homework submission. This is for educational propose.
   - For WindowOS: Powershell, Git Bash
   - For MacOS: Terminal, [iTerm2](https://iterm2.com/)
   - Built-in IDE's Terminal
-- Optional:
-  - [Github Desktop](https://desktop.github.com/)
-  - IDE version control plug-in
+- Have Github.com credentials setup
   
 ----
 
-## Configuring git
+## 🛠️ Configuring Git
 
 Before you start using git for the first time. there are a few _global_ setting that need to be done.
 
@@ -100,7 +98,7 @@ git config --global core.editor "code -w"
 
 ----
 
-## How to setup the project
+## 👨🏻‍🔧 How to setup the project
 
 Please follow steps below to setup this project
 
@@ -140,8 +138,7 @@ git branch <branch_name>
 > # you cannot checkout to to-be-deleted branch while running this command
 > git branch -d <branch_name_to_be_deleted>
 > ```
-
-> or make any typo and want to rename it. Use below command
+> or make any typo to the branch name and want to rename it. Use below command
 > ###### To rename your current branch:
 > ```shell
 > git branch -M <new_branch_name>
@@ -161,16 +158,16 @@ git switch <branch_name>
 > **Tip:** Or combine Step2 & Step3 with `git switch -C <branch_name>` or `git checkout -b <branch_name>`
 
 ### Step4: Import the project
-** You can also do this step before [Step2](https://github.com/LengSainoy/Homeworks#step2-create-your-branch-for-that-particular-homework)
+**You can also do this step before [Step2](https://github.com/LengSainoy/Homeworks#step2-create-your-branch-for-that-particular-homework)
 
 - Open your IDE, then import the recent cloned project.
 - **For IntelliJ user**, if you still don't see `/src` folder you may need to create a project module
   like [so](https://www.jetbrains.com/help/idea/creating-and-managing-modules.html#multimodule-projects)
 
-### Step5: Check your current branch*
+### Step5: (Optional) Check your current branch
 
 - Open the cloned project, and make sure that you are _checked out to your new branch_ before start
-  the work. (you will not work on `main`)
+  the work. (you **will not** work on `main`)
 
 ###### To check your current branch: (if you don't have `zsh` or `bash`)
 
@@ -184,23 +181,30 @@ git branch
 - Your package name should be in following format `firstname_lastnameinitial` all lowercase.
 
 > **For Example:** If you name is `Jane Doe` and you try to do homework in `stringtask`.
-> You will do your homework in package `stringtask/submission/jane_d` or
+> Your package name will be `stringtask/submission/jane_d` or
 > `stringtask.submission.jane_d`. (Both are the same location)
 
-### Step7: Implement your task
+---
 
-- All tasks instruction should be under `tasks` package for your reference.
+## 🌐 How to implement the task in local, and push to [Github.com][homework repo]
+
+### Step1: Implement your task in your branch
+
+- You must only do the tasks in your branch (not in `main`)
+- To [check the current branch]
+- To [switch the branch]
+- All task instructions should be under `teacher` package for your reference.
 - double check that your code can run locally before doing any commit
 
-### Step8: Commit the changes
+### Step2: Commit the changes
 
-> If you do this step on **GitHub Desktop** , go to `Step9`.
+First you will need to add all the changes to index or [Staging Area]. if you do not under stand concept of _staging 
+area_, I strongly recommend to watch this [video][Staging Area]
 
-First you will need to add all the changes to index or [Staging Area].
-
-###### To add _all files_ to [Staging Area]:
+###### To add file(s) to [Staging Area]:
 
 ```shell
+# add everything
 git add .
 # or add single file
 git add <file_name1>
@@ -221,14 +225,11 @@ git commit -m "this message should be meaningful"
 > ```
 > or see this article about [undo change]
 
-### Step9: Push you code to remote repository
+### Step3: Push you code to remote repository
 
-use either one of the command below to push it to github.com
+use either one of the command below to push it to [github.com][homework repo]
 
-- On your **GitHub Desktop** click 'Push Origin' button (if you do this, go to `Step10`)
-- For command line, using sequence of Git commands below
-
-If you *never* have origin <branch_name> branch (on GitHub)
+- If you *never* have origin <branch_name> branch (on GitHub)
 
 > Optional:
 > ###### To check existing origin branch
@@ -250,7 +251,7 @@ If you *never* have origin <branch_name> branch (on GitHub)
 git push -u origin <branch_name>
 ```
 
-Else if your local branch has already tracked to your origin/.. branch
+- Else if your local branch has already tracked to your origin/.. branch
 
 ###### To push you change to the existing remote branch:
 
@@ -258,25 +259,11 @@ Else if your local branch has already tracked to your origin/.. branch
 git push origin <branch_name>
 ```
 
-> **Note:** you can check that your local branch has tracked remote branch or not by using
->```bash
->git branch -vv
->```
 ----
 
-## Github Workflow
+## 👩‍💻 To merge the code to `main`
 
-These are the steps to setting up your own repository, then pushing it to Github.
-
-Pre-check:
-
-- [ ] Have you Java project created
-- [ ] Have git install. You can check by run `git --version`
-- [ ] You must be in your project directory (root directory). Hint: you should see `/src` folder.
-
-----
-
-### Pre-check Steps
+### Step0: Pre-check Steps
 
 please make sure these are applied to your code
 
@@ -287,15 +274,13 @@ please make sure these are applied to your code
 - [ ] format the code. all indentations are aligned.
 - [ ] remove unused code, import,and empty line.
 
-----
-
 ### Step1: Create PR on Github.com
 
 ![text](picture/examplePR.png)
 
 Create PR (pull request) on Github.com (or your IDE built-in tool) by following these steps
 
-- Set **compare:** as your branch, and `main` as the **base:** branch (4)
+- Set **compare:** as your branch, and `main` as the **base:** branch **(4)**
 - Name of the PR should follow the instructions(1)
   - PR Name format should be `[homework_name] by [student_name]`
 
@@ -307,10 +292,8 @@ Create PR (pull request) on Github.com (or your IDE built-in tool) by following 
   - [ ] New submission
   - [ ] Fixed the old submission
   - [ ] Enhancement
-- Set anyone in your team member as the `reviewer`. (2)
-- Set yourself as the `assignee`, so you will get email notification when PR has any update. (3)
-
-----
+- Set anyone in your team member as the `reviewer`. **(2)**
+- Set yourself as the `assignee`, so you will get email notification when PR has any update. **(3)**
 
 ### Step2: Notify the reviewer and wait patiently
 
@@ -324,19 +307,16 @@ if you have another homework that you want to work on. _repeat setup step_.
 - in the meantime, keep an eye on this PR, to see if there is any comment or change requested.
   _Until this PR is approved, your work here are not done yet_.
 
-#### Optional: If There is `Change Request` on the PR:
+> ###### Optional: If There is `Change Request` on the PR:
+> ![change request](picture/SCR-20230218-qav.png)
+> - Please make change according to the comments.
+> - commit, then re-[push the code]
+> - On the PR, Click `re-request review` button
+> ![re-request button](picture/img_2.png)
 
-- Please make change according to the comments.
-- commit, then re-push the code
-- On the PR, Click `re-request review` button
+### Step3: Merge the code 
 
-![re-request button](picture/img_2.png)
-
-----
-
-### Step3: Merge the code
-
-**After approval**, merge your code _(Do not merge your code unless it
+**After approval** ✅, merge your code _(Do not merge your code unless it
 has been reviewed)_
 
 Then go back to your local and update the `main` branch by run
@@ -360,12 +340,9 @@ git branch -d <branch_to_be_deleted>
 
 ----
 
-## Get the latest code
+## 🧑🏻‍💻 Get the latest code
 
-To get the latest code/homework from `origin/main` into your local
-
-Switch to the branch that you want to get it
-updated. [see](https://github.com/techCircle/Cohort13-Homework#step3-switch-to-your-branch)
+To get the latest code/homework from `origin/main` into your local [switch the branch] that you want to get it updated.
 
 ###### To update the `main` branch:
 
@@ -383,7 +360,15 @@ git merge main
 
 ----
 
-## To setup local repository
+## 🗃️ To setup local repository 
+_I real life, there is a tiny chance that you will do these step._ 
+
+These are the steps to setting up your own repository, then pushing it to Github.
+
+Pre-condition:
+
+- [ ] Have git install. You can check by run `git --version`
+- [ ] You must be in your project directory (root directory). Hint: you should see `/src` folder.
 
 ### Step1: Initialize a repository
 
@@ -395,20 +380,15 @@ git init
 
 > Note: you should see **hidden** folder named `.git` at the root directory. And you will be on `master` branch by
 > default.
-----
 
 ### Step2: Make you first commit
 
-[see similar step](https://github.com/techCircle/Cohort13-Homework#step8-commit-the-changes)
-
-----
+[see similar step][commit the change]
 
 ### Step3: Create Online Repository
 
 Go to Github.com to create an empty repository by following this [video](https://youtu.be/u-_uGO95xco?t=19)
 then **capture you repository http url**. it should end with `*.git`
-
-----
 
 ### Step4: Publish your project
 
@@ -436,8 +416,6 @@ git remote add origin <github_repo_url>
 git push -u origin main
 ```
 
-----
-
 ### Step5: Refresh Github.com
 
 TADA~~!! 
@@ -446,7 +424,7 @@ Congrats, Now you should see your work on Github.com
 
 ----
 
-## FAQ
+## 🙋‍ FAQ
 
 1. How will I start the new homework while my PR still pending (under review)
 
@@ -477,7 +455,7 @@ Congrats, Now you should see your work on Github.com
 > - Ensure that you initialize git in your project directory. You can check it by showing hidden files in your project
     directory and see that there is a folder name `.git`.
 
-## Tips
+## 🎩 Tips
 
 - Be mindful on **every response** in the console. Most of the time it will tell you what to do, or what you did wrong.
 - If you not so sure how to use any command. you can append `-help` option at the end of your git command
@@ -493,7 +471,7 @@ Congrats, Now you should see your work on Github.com
 
 ![HardWorkBeatsTalent](picture/Hard-work-beats-talent-when-talent-doesnt-work-hard.jpg?raw=true)
 
-## Docs & References
+## 📑 Docs & References
 
 - [git command cheatsheet](https://training.github.com/downloads/github-git-cheat-sheet/)
 - [linux command cheatsheet](https://www.guru99.com/linux-commands-cheat-sheet.html)
@@ -503,7 +481,7 @@ Congrats, Now you should see your work on Github.com
 [Git]: https://git-scm.com/downloads
 [JDK]: https://www.oracle.com/java/technologies/downloads/
 [Staging Area]: https://www.youtube.com/watch?v=8JJ101D3knE&t=1030s
-[homework repo]: https://github.com/techCircle/Cohort13-Homework
+[homework repo]: https://github.com/LengSainoy/Homeworks
 [autocrlf video]: https://youtu.be/8JJ101D3knE?t=658
 [undo change]: https://www.nobledesktop.com/learn/git/undo-changes#:~:text=Run%20this%20command%3A,may%20see%20in%20Git%20documentation.
 [Sublime Text]: https://www.sublimetext.com/download
@@ -513,3 +491,7 @@ Congrats, Now you should see your work on Github.com
 [Github docs]: https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git
 [Notepad++]: https://notepad-plus-plus.org/downloads/
 [How to delete merged branch]: https://app.tango.us/app/workflow/How-to-delete-the-branch-on-Github-com-89d8a4365f2840d392dd89025bb57f84
+[check the current branch]: https://github.com/LengSainoy/Homeworks#to-check-your-current-branch
+[switch the branch]: https://github.com/LengSainoy/Homeworks#step3-switch-to-your-branch
+[push the code]: https://github.com/LengSainoy/Homeworks#to-push-you-change-to-the-existing-remote-branch
+[commit the change]: https://github.com/LengSainoy/Homeworks#step8-commit-the-changes

@@ -54,3 +54,24 @@ Examples:
 [1,7,0,1,2,3] => 2
 [0,1,900,20,0] => 0
 ```
+
+## Task - Median of two sorted array
+Given two sorted array `num1` and `num2`, return the *median* of the two sorted arrays.
+
+#### Example 1:
+```text
+Input: nums1 = [1,3], nums2 = [2]
+Output: 2.00000
+Explanation: merged array = [1,2,3] and median is 2
+```
+
+#### Example 2:
+```text
+Input: nums1 = [1,2], nums2 = [3,4]
+Output: 2.50000
+Explanation: merged array = [1,2,3,4] and median is (2+3) / 2 = 5
+```
+
+#### Constraints:
+- 0 <= nums1.length <= 1000
+- 0 <= nums2.length <= 1000

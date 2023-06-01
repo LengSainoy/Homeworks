@@ -6,7 +6,7 @@
 
 ###### **Version 4**
 
-This repository is for homework submission. This is for educational propose. 
+This repository is for homework submission. This is for educational propose.
 
 ![TechCircleLogo](picture/download.png?raw=true)
 
@@ -14,16 +14,18 @@ This repository is for homework submission. This is for educational propose.
 
 ### Table of Contents
 
-- [Prerequisite](https://github.com/LengSainoy/Homeworks#prerequisite)
-- [Configuring Git](https://github.com/LengSainoy/Homeworks#configuring-git) - (optional, but highly recommend)
-- [How to setup the project](https://github.com/LengSainoy/Homeworks#how-to-setup-the-project)
-- [Implementation & push](https://github.com/LengSainoy/Homeworks#-how-to-implement-the-task-in-local-and-push-to-githubcom)
-- [Create pull request](https://github.com/LengSainoy/Homeworks#create-pull-request)
-- [Get the latest code](https://github.com/LengSainoy/Homeworks#get-the-latest-code)
-- [To setup local repository](https://github.com/LengSainoy/Homeworks#to-setup-local-repository) - for future reference
-- [FAQ](https://github.com/LengSainoy/Homeworks#faq)
-- [Tips](https://github.com/LengSainoy/Homeworks#tips)
-- [Docs & References](https://github.com/LengSainoy/Homeworks#docs--references)
+<!-- TOC -->
+  * [👀 Prerequisite](#-prerequisite)
+  * [🛠️ Configuring Git](#-configuring-git) - (optional, but highly recommend)
+  * [👨🏻‍🔧 How to setup the project](#-how-to-setup-the-project)
+  * [🌐 How to implement the task in local, and push to Github.com](#-how-to-implement-the-task-in-local-and-push-to-githubcomhomework-repo)
+  * [⏭️ Create pull request](#-create-pull-request)
+  * [🧑🏻‍💻 Get the latest code](#-get-the-latest-code)
+  * [🗃️ To setup local repository](#-to-setup-local-repository) - for future reference
+  * [🙋‍ FAQ](#-faq)
+  * [🎩 Tips](#-tips)
+  * [📑 Docs & References](#-docs--references)
+<!-- TOC -->
 
 ----
 
@@ -41,7 +43,7 @@ This repository is for homework submission. This is for educational propose.
   - For MacOS: Terminal, [iTerm2](https://iterm2.com/)
   - Built-in IDE's Terminal
 - Have Github.com credentials setup
-  
+
 ----
 
 ## 🛠️ Configuring Git
@@ -73,25 +75,28 @@ git config --global core.autocrlf true
 
 You can learn more about autocrlf [here][autocrlf video]
 
-- _Optional:_ Set a default code editor for Git. (refer to [Github docs]) 
+- _Optional:_ Set a default code editor for Git. (refer to [Github docs])
 
   These command will be difference regarding which text editor program you'd like to use. By default it will be _vi_
 > **Note:** you will need to install these 3rd party application **before running** these command
-  - To change to your plain text editor. for windows user, you will need [Notepad++]
+
+- To change to your plain text editor. for windows user, you will need [Notepad++]
 ```shell
 # windows
 git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 # mac
 git config --global core.editor "open -e -w -n"
 ```
-  - To change to [Sublime Text]
+
+- To change to [Sublime Text]
 ```shell
 # windows for sublime text 3
 git config --global core.editor "'c:/program files/sublime text 3/subl.exe' -w"
 # mac
 git config --global core.editor "subl -n -w"
 ```
-  - To change to [Visual Studio Code]
+
+- To change to [Visual Studio Code]
 ```shell
 # both mac and windows
 git config --global core.editor "code -w"
@@ -159,7 +164,9 @@ git switch <branch_name>
 > **Tip:** Or combine Step2 & Step3 with `git switch -C <branch_name>` or `git checkout -b <branch_name>`
 
 ### Step4: Import the project
-**You can also do this step before [Step2](https://github.com/LengSainoy/Homeworks#step2-create-your-branch-for-that-particular-homework)
+
+**You can also do this step
+before [Step2](#step2-create-your-branch-for-that-particular-homework)
 
 - Open your IDE, then import the recent cloned project.
 - **For IntelliJ user**, if you still don't see `/src` folder you may need to create a project module
@@ -199,7 +206,7 @@ git branch
 
 ### Step2: Commit the changes
 
-First you will need to add all the changes to index or [Staging Area]. if you do not under stand concept of _staging 
+First you will need to add all the changes to index or [Staging Area]. if you do not under stand concept of _staging
 area_, I strongly recommend to watch this [video][Staging Area]
 
 ###### To add file(s) to [Staging Area]:
@@ -262,7 +269,7 @@ git push origin <branch_name>
 
 ----
 
-## 👩‍💻 To merge the code to `main`
+## ⏭️ Create pull request
 
 ### Step0: Pre-check Steps
 
@@ -313,10 +320,10 @@ if you have another homework that you want to work on. _repeat setup step_.
 > - Please make change according to the comments.
 > - commit, then re-[push the code]
 > - On the PR, Click `re-request review` button
-> 
+>
 > ![re-request button](picture/img_2.png)
 
-### Step3: Merge the code 
+### Step3: Merge the code
 
 **After approval** ✅, merge your code _(Do not merge your code unless it
 has been reviewed)_
@@ -328,9 +335,10 @@ git pull
 ```
 
 ### Step4: Prune merged branch
+
 Delete your merged branch in Github.com
 
-After merging the PR, it should have option to delete right after. but if you miss that option, you can follow this 
+After merging the PR, it should have option to delete right after. but if you miss that option, you can follow this
 [steps][How to delete merged branch]
 
 then go back to the terminal in your local. Make sure you on the `main` branch and run
@@ -362,8 +370,9 @@ git merge main
 
 ----
 
-## 🗃️ To setup local repository 
-_I real life, there is a tiny chance that you will do these step._ 
+## 🗃️ To setup local repository
+
+_I real life, there is a tiny chance that you will do these step._
 
 These are the steps to setting up your own repository, then pushing it to Github.
 
@@ -420,7 +429,7 @@ git push -u origin main
 
 ### Step5: Refresh Github.com
 
-TADA~~!! 
+TADA~~!!
 
 Congrats, Now you should see your work on Github.com
 
@@ -457,7 +466,7 @@ Congrats, Now you should see your work on Github.com
 > - Ensure that you initialize git in your project directory. You can check it by showing hidden files in your project
     directory and see that there is a folder name `.git`.
 
-6. My branch cannot be automatically merge because of the merge conflict. 
+6. My branch cannot be automatically merge because of the merge conflict.
 
 > See a short 5 mins video show how to resolve merge conflict [here](https://www.youtube.com/watch?v=xNVM5UxlFSA&t=129s)
 
@@ -467,7 +476,7 @@ Congrats, Now you should see your work on Github.com
 - If you not so sure how to use any command. you can append `--help` option at the end of your git command
 
   _For Example:_
-  
+
   ```bash
   git commit --help
   git branch --help
@@ -483,24 +492,39 @@ Congrats, Now you should see your work on Github.com
 - [linux command cheatsheet](https://www.guru99.com/linux-commands-cheat-sheet.html)
 - article of how to [undo change] (undo git commit)
 - how to change default git editor. see [Github docs]
-- Git terminology. 
+- Git terminology.
   - [JavaPoint](https://www.javatpoint.com/git-terminology)
   - [A Cloud Guru](https://acloudguru.com/blog/engineering/git-terms-explained)
 
 [Git]: https://git-scm.com/downloads
 [JDK]: https://www.oracle.com/java/technologies/downloads/
+
 [Staging Area]: https://www.youtube.com/watch?v=8JJ101D3knE&t=1030s
+
 [homework repo]: https://github.com/LengSainoy/Homeworks
+
 [autocrlf video]: https://youtu.be/8JJ101D3knE?t=658
+
 [undo change]: https://www.nobledesktop.com/learn/git/undo-changes#:~:text=Run%20this%20command%3A,may%20see%20in%20Git%20documentation.
+
 [Sublime Text]: https://www.sublimetext.com/download
+
 [Visual Studio Code]: https://code.visualstudio.com/download
+
 [IntelliJ IDEA]: https://www.jetbrains.com/idea/download
+
 [Eclipse]: https://www.eclipse.org/downloads/
+
 [Github docs]: https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git
+
 [Notepad++]: https://notepad-plus-plus.org/downloads/
+
 [How to delete merged branch]: https://app.tango.us/app/workflow/How-to-delete-the-branch-on-Github-com-89d8a4365f2840d392dd89025bb57f84
+
 [check the current branch]: https://github.com/LengSainoy/Homeworks#to-check-your-current-branch
+
 [switch the branch]: https://github.com/LengSainoy/Homeworks#step3-switch-to-your-branch
+
 [push the code]: https://github.com/LengSainoy/Homeworks#to-push-you-change-to-the-existing-remote-branch
+
 [commit the change]: https://github.com/LengSainoy/Homeworks#step8-commit-the-changes

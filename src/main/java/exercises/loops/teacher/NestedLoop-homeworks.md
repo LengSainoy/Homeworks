@@ -1,5 +1,7 @@
 # Homeworks
 
+# Loop - Extra
+
 ## Task - Advanced guessing game
 
 Create number guessing game between 1-100 for 1 player. the program should generate random number
@@ -8,7 +10,17 @@ between 1-100. then player keep guessing it until it's correct.
 the program should have the following features:
 
 - should ask name of the player
+- program should ask what level do player want to play (easy(1), medium(2), hard(3))
 - have prompt to ask player to enter and the range of entered number.
+  - easy - the guess range should be in between 1-10
+  - medium - the guess range should be in between 1-25
+  - hard - the guess range should be in between 1-100
+```text
+What level would you like to play? (easy 1, medium 2, hard 3)
+> 2
+You've selected medium difficulty.
+Guest number between 1 - 25
+```
 - if the guessing number is wrong, the program will give feedback to player that the guessing number
   is `greater` or `lower` than the winner number and ask player to try again
 
@@ -40,9 +52,14 @@ Your total guess are <number_of_times> times.
 **Example:**
 
 ```text
-What is the player name?
-> Tommy
 // assuming the winner number is 62
+What is your name?
+> Leng
+
+Hi Leng, What level would you like to play? (easy 1, medium 2, hard 3)
+> 3
+You've selected hard difficulty.
+
 Guest number between 1 - 100:
 > 50
 50 is lower than winner number. Please try again
@@ -62,19 +79,25 @@ Guest number between 51 - 74:
 Guest number between 51 - 74:
 > 62
 
-Congrats Tommy, You've won. 
+Congrats Leng, You've won. 
 The winner number is 62
 Your total guess are 5 times.
 ```
 
 ### Extra: Keeping high score (optional)
 
-- program should keep record of high score (lowest number of guess)
+- program should always keep record of high score (lowest number of guess)
+- each level should have their own high scores. hence you should have 3 high scores
+- high score should NOT be mixed for each level.
 - after finish the program should prompt player to try again with display the high score of the
   previous game.
 
 ```
-The best score is <number_of_guess> tries
+// use the example above
+The best scores are
+ - easy difficulty : <number_of_guess> tries
+ - medium difficulty : <number_of_guess> tries
+ - hard difficulty : <number_of_guess> tried
 Would you like to try again. (y/n)
 ```
 

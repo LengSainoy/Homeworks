@@ -1,10 +1,11 @@
 # Extra Homeworks
 
-
-
 ## Task - Find sum of multiple
 
-Write program to create array from 2 specific numbers
+Write program to create array from 2 specific numbers 
+only when the first arg is less than the second arg.
+if other way around return empty array instead
+output array should be in ascending order 
 
 ```text
 arrayFromRange(1,5) => [1,2,3,4,5]
@@ -75,3 +76,47 @@ Explanation: merged array = [1,2,3,4] and median is (2+3) / 2 = 5
 #### Constraints:
 - 0 <= nums1.length <= 1000
 - 0 <= nums2.length <= 1000
+
+## Task - Single Number
+Given a **non-empty** array of integers `nums`. every element appears twice except for one. Find that single one. 
+
+#### Example 1:
+```text
+Input: nums = [2,2,1]
+Output: 1
+```
+
+#### Example 2:
+```text
+Input: nums = [4,1,2,1,2]
+Output: 4
+```
+
+#### Example 3:
+```text
+Input: nums = [1]
+Output: 1
+```
+
+## Task - Longest common prefix
+Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, 
+return empty string.
+
+#### Example 1:
+```text
+input: strs = ["flower","flow","flight"]
+Output: "fl"
+```
+
+#### Example 2:
+```text
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+```
+
+#### Example 3:
+```text
+input: strs = ["techcircle","technology","technician"]
+Output: "tech"
+```

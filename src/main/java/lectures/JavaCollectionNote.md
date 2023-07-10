@@ -168,6 +168,7 @@ class Main {
 Implementation of dynamic array. resizable
 
 ### Queue
+official [docs](https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html)
 extends Collections Interface
 Working with queue of object. use with the resource that share amount many consumer. ie. printer
 jobs
@@ -197,13 +198,14 @@ class QueueDemo {
     var front2 = queue.remove(); // remove item at the front of the queue and return it
     // if queue is empty throw an exception
     // d -> b -> a
-    queue.poll() // similar to remove(), will return null if queue is empty
+    queue.poll(); // similar to remove(), will return null if queue is empty
   }
 }
 
 ```
 
 ### Set
+Official [docs](https://docs.oracle.com/javase/8/docs/api/java/util/Set.html)
 this collection will only store unique obj. no duplicated item
 will NOT guarantee order of item
 

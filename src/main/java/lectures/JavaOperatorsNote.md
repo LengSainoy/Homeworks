@@ -187,12 +187,15 @@ boolean b3 = true ^ false; // true
 boolean b4 = true ^ true; // false 
 ```
 
-The **XOR** operator is used less often than others. Just remember that Java has it. If you really
+> **Note:** The **XOR** operator is used less often than others. Just remember that Java has it. If you really
 need it, you can use it.
 
 ### The precedence of logical operators 
 Below are the logical operations sorted in order of decreasing
-their priorities in expressions: `!` (NOT), `^` (XOR), `&&` (AND), `||` (OR).
+their priorities in expressions: 
+1. ()
+2. `!` (NOT)
+3. `^` (XOR), `&&` (AND), `||` (OR).
 
 So, the following variable is `true`:
 
@@ -230,6 +233,13 @@ Also, we can write parts of the expression in parentheses to improve readability
 (number > 100) && (number < 200);
 ```
 But parentheses are not necessary here because relational operators have a _higher priority_ than logical operators.
+
+## Comparison operators (relational oper.)
+Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.
+
+The return value of a comparison is either true or false.
+
+## Assignment Operator
 
 ## Scanner Class
 use to read input. it could be from file or even user input

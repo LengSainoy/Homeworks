@@ -178,7 +178,7 @@ class MapDemo {
 
       // for (Customer c : map) // this will not work
       for (var key : map.keySet())
-         System.out.println(k + " = "map.get(k));
+         System.out.println(k + " = " + map.get(k));
 
       for (var entry : map.entrySet()) {
          System.out.println(entry); // key=value

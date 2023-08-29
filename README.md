@@ -4,27 +4,27 @@
 
 # 📚 Homework Repository
 
-###### **Version 4**
+###### **Version 4.2**
 
 This repository is for homework submission. This is for educational propose.
 
-![TechCircleLogo](picture/download.png?raw=true)
+![TechCircleLogo](pictures/download.png?raw=true)
 
 ----
 
 ### Table of Contents
 
 <!-- TOC -->
-  * [👀 Prerequisite](#-prerequisite)
-  * [🛠️ Configuring Git](#-configuring-git) - (optional, but highly recommend)
-  * [👨🏻‍🔧 How to setup the project](#-how-to-setup-the-project)
-  * [🌐 How to implement the task in local, and push to Github.com](#-how-to-implement-the-task-in-local-and-push-to-githubcomhomework-repo)
-  * [⏭️ Create pull request](#-create-pull-request)
-  * [🧑🏻‍💻 Get the latest code](#-get-the-latest-code)
-  * [🗃️ To setup local repository](#-to-setup-local-repository) - for future reference
-  * [🙋‍ FAQ](#-faq)
-  * [🎩 Tips](#-tips)
-  * [📑 Docs & References](#-docs--references)
+* [👀 Prerequisite](#-prerequisite)
+* [🛠️ Configuring Git](#-configuring-git) - (optional, but highly recommend)
+* [👨🏻‍🔧 How to setup the project](#-how-to-setup-the-project)
+* [🌐 How to implement the task in local, and push to Github.com](#-how-to-implement-the-task-in-local-and-push-to-githubcomhomework-repo)
+* [⏭️ Create pull request](#-create-pull-request)
+* [🧑🏻‍💻 Get the latest code](#-get-the-latest-code)
+* [🗃️ To setup local repository](#%EF%B8%8F-to-setup-local-repository) - for future reference
+* [🙋‍ FAQ](#-faq)
+* [🎩 Tips](#-tips)
+* [📑 Docs & References](#-docs--references)
 <!-- TOC -->
 
 ----
@@ -249,7 +249,7 @@ use either one of the command below to push it to [github.com][homework repo]
 > ```bash
 > git branch -vv
 > ```
-> ![branch -vv screenshot](picture/SCR-20221207-cm9.png)
+> ![branch -vv screenshot](pictures/SCR-20221207-cm9.png)
 
 ###### To publish the branch for the first time.
 
@@ -284,7 +284,7 @@ please make sure these are applied to your code
 
 ### Step1: Create PR on Github.com
 
-![text](picture/examplePR.png)
+![text](pictures/examplePR.png)
 
 Create PR (pull request) on Github.com (or your IDE built-in tool) by following these steps
 
@@ -316,12 +316,12 @@ if you have another homework that you want to work on. _repeat setup step_.
   _Until this PR is approved, your work here are not done yet_.
 
 > ###### Optional: If There is `Change Request` on the PR:
-> ![change request](picture/SCR-20230218-qav.png)
+> ![change request](pictures/SCR-20230218-qav.png)
 > - Please make change according to the comments.
 > - commit, then re-[push the code]
 > - On the PR, Click `re-request review` button
 >
-> ![re-request button](picture/img_2.png)
+> ![re-request button](pictures/img_2.png)
 
 ### Step3: Merge the code
 
@@ -484,7 +484,7 @@ Congrats, Now you should see your work on Github.com
   ```
 - For Mac user, this is how you can modify your terminal into the next step. see this [link](https://www.youtube.com/watch?v=CF1tMjvHDRA&t=81s)
 
-![HardWorkBeatsTalent](picture/Hard-work-beats-talent-when-talent-doesnt-work-hard.jpg?raw=true)
+![HardWorkBeatsTalent](pictures/Hard-work-beats-talent-when-talent-doesnt-work-hard.jpg?raw=true)
 
 ## 📑 Docs & References
 
@@ -527,4 +527,4 @@ Congrats, Now you should see your work on Github.com
 
 [push the code]: https://github.com/LengSainoy/Homeworks#to-push-you-change-to-the-existing-remote-branch
 
-[commit the change]: https://github.com/LengSainoy/Homeworks#step8-commit-the-changes
+[commit the change]: #step2-commit-the-changes

@@ -185,12 +185,12 @@ git branch
 
 ### Step6: Create a new package
 
-- Create new package in your name under `submission` directory under each homework directory
+- Create new package in your name under `students` directory under each homework directory
 - Your package name should be in following format `firstname_lastnameinitial` all lowercase.
 
-> **For Example:** If you name is `Jane Doe` and you try to do homework in `stringtask`.
-> Your package name will be `stringtask/submission/jane_d` or
-> `stringtask.submission.jane_d`. (Both are the same location)
+> **For Example:** If you name is `Jane Doe` and you try to do homework in `week01`.
+> Your package name will be `week01/students/jane_d` or
+> `week01.students.jane_d`. (Both are the same location)
 
 ---
 

@@ -10,9 +10,9 @@
 (what is your homework is about)
 
 ## Type of Change
+Note: Select one
 
 - [ ] New submission
 - [ ] Fixed the old submission
 - [ ] Enhancement
 
-Note: Select one by changing [ ] to [x]

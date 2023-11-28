@@ -4,7 +4,7 @@
 
 # 📚 Homework Repository
 
-###### **Version 4.2**
+###### **Version 4.4**
 
 This repository is for homework submission. This is for educational propose.
 
@@ -18,7 +18,7 @@ This repository is for homework submission. This is for educational propose.
 * [👀 Prerequisite](#-prerequisite)
 * [🛠️ Configuring Git](#-configuring-git) - (optional, but highly recommend)
 * [👨🏻‍🔧 How to setup the project](#-how-to-setup-the-project)
-* [🌐 How to implement the task in local, and push to Github.com](#-how-to-implement-the-task-in-local-and-push-to-githubcomhomework-repo)
+* [🌐 How to implement the task in local, and push to Github.com](#-how-to-implement-the-task-in-local-and-push-to-githubcom)
 * [⏭️ Create pull request](#-create-pull-request)
 * [🧑🏻‍💻 Get the latest code](#-get-the-latest-code)
 * [🗃️ To setup local repository](#%EF%B8%8F-to-setup-local-repository) - for future reference

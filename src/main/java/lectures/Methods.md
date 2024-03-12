@@ -16,8 +16,8 @@ Considering the following example to explain the syntax of a method −
 
 ```java
 modifier returnType nameOfMethod(Parameter List){
-    // method body
-    }
+  // method body
+}
 ```
 
 ![](./pictures/download.webp)
@@ -195,4 +195,5 @@ double myMethod(double x, double y)
 ```
 
 ## Document the method
-it optional to explain what the method 
+it optional to explain what the method does. (usually the method name should explain it)
+but if you need to add a document / note to your method. you can do so by using jsdoc

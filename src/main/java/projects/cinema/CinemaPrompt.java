@@ -23,6 +23,12 @@ public class CinemaPrompt implements Closeable {
   public static void displayTicketPrice(int price) {
     System.out.println("Ticket price: $" + price);
   }
+  public static int showMenu(){
+    System.out.println("1. Show the seats");
+    System.out.println("2. By a ticket");
+    System.out.println("0. Exit");
+    return scan.nextInt();
+  }
 
   @Override
   public void close() throws IOException {
